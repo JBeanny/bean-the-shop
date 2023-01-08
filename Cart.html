@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./components/Navbar.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="./Cart.css" />
+    <script src="./Cart.js" defer></script>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <div class="title-container">
+      <div class="cart">
+        <div class="total-items">Cart: 4</div>
+        <button onclick="clearCart()">Clear all</button>
+      </div>
+    </div>
+    <div class="container"></div>
+
+    <div class="no-cart">
+      <div class="no-item">
+        <h1>&#9785;</h1>
+        <h3>Your cart is empty !</h3>
+        <a href="index.html">Go shopping</a>
+      </div>
+      <div class="animation-bg"></div>
+    </div>
+    <div class="total-container">
+      <div class="total">
+        <div class="total-cost"></div>
+        <button onclick="clearCart()">Checkout</button>
+      </div>
+    </div>
+  </body>
+</html>

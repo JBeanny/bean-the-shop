@@ -1,0 +1,142 @@
+@import "../global.css";
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-clr);
+  border-radius: 50%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  animation: loading 1s cubic-bezier(0, 0, 0.2, 1) infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.3;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+.subLoading {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+}
+.loading h1 {
+  position: absolute;
+  color: rgba(128, 128, 128, 0.783);
+}
+
+.container {
+  max-width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 40%;
+  height: 50%;
+}
+
+.image-container img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.product-detail {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product-detail h1 {
+  color: var(--primary-clr);
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buyNow {
+  width: 150px;
+  height: 50px;
+  background-color: var(--primary-clr);
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+}
+
+.buyNow svg {
+  fill: white;
+}
+
+.buyNow:hover svg {
+  fill: var(--primary-clr);
+}
+
+.buyNow:hover {
+  background-color: transparent;
+  border: 2px solid var(--primary-clr);
+  color: var(--primary-clr);
+}
+
+.addCart {
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--primary-clr);
+  border-radius: 10px;
+  border: 2px solid var(--primary-clr);
+  cursor: pointer;
+  transition: 0.2s all linear;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 15px;
+}
+
+.addCart svg {
+  fill: var(--primary-clr);
+}
+
+.addCart:hover svg {
+  fill: white;
+}
+
+.addCart:hover {
+  background-color: var(--primary-clr);
+  border: none;
+  color: white;
+}
